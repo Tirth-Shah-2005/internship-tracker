@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Internship Tracker </title>
+</head>
+
+<body>
+
+    <header>
+        <h1> Internship Tracker </h1>
+        <p> keep track of all of your internships </p>
+    </header>
+
+    <main>
+        <section id="firstSec">
+            <h2> Application Summary: </h2>
+            <div class="summaryStorage">
+                <div class="summaryCard">
+                    <h3>Total Applications</h3>
+                    <p> 5 </p>
+                </div>
+
+                <div class="summaryCard">
+                    <h3>Selected</h3>
+                    <p> 2 </p>
+                </div>
+
+                <div class="summaryCard">
+                    <h3>Pending</h3>
+                    <p> 3 </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="secondSec">
+            <h2> Add New Application </h2>
+            <form action="">
+                <label for="company">
+                    Company Name:
+                </label>
+                <input type="text" id="company" placeholder="Enter the Company Name" required>
+
+                <label for="jobRole">
+                    Job Role:
+                </label>
+                <input type="text" id="jobRole" placeholder="Enter the role you applied for" required>
+
+                <label for="applyDate">
+                    Application Date:
+                </label>
+                <input type="date" id="applyDate" required>
+
+                <label for="status">
+                    Status:
+                </label>
+                <select name="status" id="status" required>
+                    <option value="" disabled selected> Choose Status </option>
+                    <option value="pending">Pending</option>
+                    <option value="selected">Selected</option>
+                    <option value="rejected">Rejected</option>
+                </select>
+
+                <label for="text"> Notes </label>
+                <textarea name="notes" id="text" maxlength="300"></textarea>
+
+                <button type="submit" id="submit"> Submit Details </button>
+            </form>
+        </section>
+
+        <section id="thirdSec">
+            <h2> Application List </h2>
+
+            <div class="appCard">
+                <h3>Google</h3>
+                <p>Role: Frontend Developer Intern</p>
+                <p>Application Date: 01/11/2026</p>
+                <span class="pending">Pending</span>
+            </div>
+
+            <div class="appCard">
+                <h3>Microsoft</h3>
+                <p>Role: Software Engineer Intern</p>
+                <p>Application Date: 30/10/2026</p>
+                <span class="selected">Selected</span>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

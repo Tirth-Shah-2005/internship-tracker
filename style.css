@@ -1,0 +1,177 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    /* color: black; */
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+header{
+    /* background-color: navy; */
+    background-color: #172554;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+header p{
+    font-size: 1.2rem;
+}
+
+#firstSec{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#firstSec h2{
+    margin-bottom: 15px;
+    text-align: left;
+    padding-left: 5px;
+}
+
+.summaryStorage{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.summaryCard{
+    flex: 1;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px lightgray;
+    text-align: center;
+}
+
+.summaryCard p{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+#secondSec{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 2px 5px 5px lightgray;
+}
+
+#secondSec h2{
+    margin-bottom: 15px;
+}
+
+#secondSec form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+#secondSec label{
+    font-weight: bold;
+}
+
+#secondSec input, 
+#secondSec select,
+#secondSec textarea{
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid lightgray;
+    width: 100%;
+    font: inherit;
+}
+
+#secondSec textarea{
+    height: 90px;
+}
+
+#secondSec button{
+    background-color: #172554;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    margin-top: 5px;
+    /* transition: background-color 0.2s ease */
+}
+
+#secondSec button:hover{
+    background-color: #1e3a8a;
+    transition: background-color 0.2s ease
+}
+
+#thirdSec{
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#thirdSec h2{
+    margin-bottom: 15px;
+}
+
+#thirdSec .appCard{
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    box-shadow: 2px 5px 5px lightgray;
+}
+
+#thirdSec h3{
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+}
+
+#thirdSec p{
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+#thirdSec span{
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.pending {
+    background-color: #fef3c7;
+    color: #92400e;
+}
+
+.selected {
+    background-color: #dcfce7;
+    color: #166534;
+}
+
+.rejected {
+    background-color: #fee2e2;
+    color: #991b1b;
+}
+
+@media (max-width: 600px){
+    .summaryStorage{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .summaryCard{
+        width: 90%;
+        align-self: center;
+    }
+
+    #secondSec{
+        padding: 15px;
+    }
+}
